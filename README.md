@@ -2,6 +2,11 @@
 
 This project displays Twitter trending topics using Chart.js for data visualization. It features a responsive design with Bootstrap and social media links in the footer.
 
+## Live Demo
+
+The project is deployed on GitHub Pages and can be accessed at the following URL:
+[https://kcprsnlcc.github.io/fcb-data-visualization/](https://kcprsnlcc.github.io/fcb-data-visualization/)
+
 ## Project Overview
 
 The application fetches Twitter trending topics and visualizes them in both horizontal and vertical bar charts. The charts show the volume (number of tweets) for each trending topic, making it easy to compare their popularity in different visual formats.
@@ -71,3 +76,15 @@ The CSS file that styles the web application:
 The application is set up to use the Twitter Trends API from RapidAPI. To use your own API key:
 1. Obtain an API key from [RapidAPI](https://rapidapi.com/)
 2. Replace the existing key in the index.js file
+
+## Deployment
+
+This project is deployed using GitHub Pages. To deploy your own version:
+
+1. Fork this repository
+2. Create a `gh-pages` branch: `git checkout -b gh-pages`
+3. Push the branch to GitHub: `git push origin gh-pages`
+4. Go to your repository settings on GitHub
+5. Navigate to "Pages" in the sidebar
+6. Under "Source", select the `gh-pages` branch
+7. Your site will be published at `https://kcprsnlcc.github.io/fcb-data-visualization/`
