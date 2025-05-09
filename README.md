@@ -2,6 +2,11 @@
 
 This project displays Twitter trending topics using Chart.js for data visualization. It features a responsive design with Bootstrap and social media links in the footer.
 
+## Live Demo
+
+This project is deployed using GitHub Pages and can be accessed here:
+[https://kcprsnlcc.github.io/fcb-data-visualization/](https://kcprsnlcc.github.io/fcb-data-visualization/)
+
 ## Project Overview
 
 The application fetches Twitter trending topics and visualizes them in both horizontal and vertical bar charts. The charts show the volume (number of tweets) for each trending topic, making it easy to compare their popularity in different visual formats.
