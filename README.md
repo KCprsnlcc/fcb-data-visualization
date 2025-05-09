@@ -71,12 +71,3 @@ The CSS file that styles the web application:
 The application is set up to use the Twitter Trends API from RapidAPI. To use your own API key:
 1. Obtain an API key from [RapidAPI](https://rapidapi.com/)
 2. Replace the existing key in the index.js file
-
-## Future Improvements
-
-- Implement live data fetching from Twitter API
-- Add user filtering options for trends by region
-- Add theme switcher for dark/light mode
-- Implement additional chart types (pie chart, line chart for trend evolution)
-- Add data export functionality
-- Create comparison view between different regions/countries
