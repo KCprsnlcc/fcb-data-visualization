@@ -1,0 +1,37 @@
+/* Style for all h1 headings */
+h1 {
+	/* Set the font family with fallbacks */
+	font-family: 'Franklin Gothic Medium','Arial Narrow',Arial, sans-serif;
+	/* Center the text horizontally */
+	text-align: center;
+}
+
+/* Footer styling */
+footer {
+    /* Set the footer background color to black */
+    background-color: black;
+    /* Use flexbox for layout */
+    display: flex;
+    /* Center items horizontally */
+    justify-content: center;
+    /* Center items vertically */
+    align-items: center;
+    /* Add padding around the footer content */
+    padding: 10px;
+}
+
+/* Style for all social media icons */
+.fa-globe, .fa-facebook, .fa-twitter, .fa-instagram, .fa-tiktok, .fa-youtube {
+    /* Set the icon size */
+    font-size: 25px;
+    /* Set the icon color to white */
+    color: white;
+    /* Add horizontal margin around each icon */
+    margin: 0 10px 0 10px;
+}
+
+/* Hover effect for all social media icons */
+.fa-globe:hover, .fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-tiktok:hover, .fa-youtube:hover {
+    /* Change color to gray when hovering */
+    color: gray;
+}
