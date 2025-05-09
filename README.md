@@ -4,7 +4,7 @@ This project displays Twitter trending topics using Chart.js for data visualizat
 
 ## Live Demo
 
-The project is deployed on GitHub Pages and can be accessed at the following URL:
+This project is deployed using GitHub Pages and can be accessed here:
 [https://kcprsnlcc.github.io/fcb-data-visualization/](https://kcprsnlcc.github.io/fcb-data-visualization/)
 
 ## Project Overview
