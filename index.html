@@ -28,9 +28,37 @@
 	<div class="bg-dark px-5 py-5">
 		<!-- Main heading with light text color, centered, and bottom margin -->
 		<h1 class="text-light text-center mb-3">Trending Topics of <span id="date">5/9/25</span></h1>
-		<!-- Canvas element where the chart will be rendered -->
-		<canvas id="myChart"></canvas>
-
+		
+		<!-- Chart containers with responsive layout -->
+		<div class="container-fluid">
+			<div class="row mb-5">
+				<!-- Horizontal bar chart container -->
+				<div class="col-md-6">
+					<div class="card bg-dark text-light border-light mb-4 mb-md-0">
+						<div class="card-header">
+							<h4 class="text-center">Horizontal Bar Chart</h4>
+						</div>
+						<div class="card-body">
+							<!-- Canvas element where the horizontal chart will be rendered -->
+							<canvas id="myChart" height="300"></canvas>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Vertical bar chart container -->
+				<div class="col-md-6">
+					<div class="card bg-dark text-light border-light">
+						<div class="card-header">
+							<h4 class="text-center">Vertical Bar Chart</h4>
+						</div>
+						<div class="card-body">
+							<!-- Canvas element where the vertical chart will be rendered -->
+							<canvas id="verticalChart" height="300"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- Footer section containing social media links -->

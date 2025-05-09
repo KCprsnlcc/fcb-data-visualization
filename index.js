@@ -107,49 +107,99 @@ console.log(volumes);
 // Get a reference to the HTML canvas element with id 'myChart'
 const myChart = document.getElementById('myChart');
 
-// Create a new bar chart using Chart.js
+// Create a new bar chart using Chart.js (horizontal bar chart)
 let barChart = new Chart(myChart, {
     type: 'bar', // Specify the chart type
     data: {
-	  labels: topics, // Use the topics array for x-axis labels
-	  datasets: [{
-	    label: '# of tweets/xeets', // Chart label
-	    data: volumes, // Use the volumes array for data values
-	    borderWidth: 2, // Width of the bar borders
-	    backgroundColor: [ // Background colors for the bars (with transparency)
-	        'rgba(255, 99, 132, 0.2)',
-	        'rgba(255, 159, 64, 0.2)',
-	        'rgba(255, 205, 86, 0.2)',
-	        'rgba(75, 192, 192, 0.2)',
-	        'rgba(54, 162, 235, 0.2)',
-	        'rgba(153, 102, 255, 0.2)',
-	        'rgba(201, 203, 207, 0.2)'
-	    ],
-	    borderColor: [ // Border colors for the bars
-	        'rgb(255, 99, 132)',
-	        'rgb(255, 159, 64)',
-	        'rgb(255, 205, 86)',
-	        'rgb(75, 192, 192)',
-	        'rgb(54, 162, 235)',
-	        'rgb(153, 102, 255)',
-	        'rgb(201, 203, 207)'
-	    ],
-	    hoverBackgroundColor: [ // Background colors when hovering
-	        'rgb(255, 99, 132)',
-	        'rgb(255, 159, 64)',
-	        'rgb(255, 205, 86)',
-	        'rgb(75, 192, 192)',
-	        'rgb(54, 162, 235)',
-	        'rgb(153, 102, 255)',
-	        'rgb(201, 203, 207)'
-	    ]
-	  }]
-	},
+      labels: topics, // Use the topics array for x-axis labels
+      datasets: [{
+        label: '# of tweets/xeets', // Chart label
+        data: volumes, // Use the volumes array for data values
+        borderWidth: 2, // Width of the bar borders
+        backgroundColor: [ // Background colors for the bars (with transparency)
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(255, 159, 64, 0.2)',
+            'rgba(255, 205, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(201, 203, 207, 0.2)'
+        ],
+        borderColor: [ // Border colors for the bars
+            'rgb(255, 99, 132)',
+            'rgb(255, 159, 64)',
+            'rgb(255, 205, 86)',
+            'rgb(75, 192, 192)',
+            'rgb(54, 162, 235)',
+            'rgb(153, 102, 255)',
+            'rgb(201, 203, 207)'
+        ],
+        hoverBackgroundColor: [ // Background colors when hovering
+            'rgb(255, 99, 132)',
+            'rgb(255, 159, 64)',
+            'rgb(255, 205, 86)',
+            'rgb(75, 192, 192)',
+            'rgb(54, 162, 235)',
+            'rgb(153, 102, 255)',
+            'rgb(201, 203, 207)'
+        ]
+      }]
+    },
     options: {
     indexAxis:'y', // Use horizontal bar chart (y-axis for categories)
       scales: {
         y: {
           beginAtZero: true // Start the y-axis at zero
+        }
+      }
+    }
+  });
+
+// Get a reference to the second canvas element for vertical chart
+const verticalChart = document.getElementById('verticalChart');
+
+// Create a new vertical bar chart using Chart.js
+let vertBarChart = new Chart(verticalChart, {
+    type: 'bar', // Specify the chart type
+    data: {
+      labels: topics, // Use the topics array for x-axis labels
+      datasets: [{
+        label: '# of tweets/xeets', // Chart label
+        data: volumes, // Use the volumes array for data values
+        borderWidth: 2, // Width of the bar borders
+        backgroundColor: [ // Background colors for the bars (with transparency)
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 99, 132, 0.2)'
+        ],
+        borderColor: [ // Border colors for the bars
+            'rgb(54, 162, 235)',
+            'rgb(153, 102, 255)',
+            'rgb(255, 99, 132)'
+        ],
+        hoverBackgroundColor: [ // Background colors when hovering
+            'rgb(54, 162, 235)',
+            'rgb(153, 102, 255)',
+            'rgb(255, 99, 132)'
+        ]
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        y: {
+          beginAtZero: true, // Start the y-axis at zero
+          title: {
+            display: true,
+            text: 'Number of Tweets'
+          }
+        },
+        x: {
+          title: {
+            display: true,
+            text: 'Trending Topics'
+          }
         }
       }
     }

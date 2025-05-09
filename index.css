@@ -35,3 +35,46 @@ footer {
     /* Change color to gray when hovering */
     color: gray;
 }
+
+/* Chart container card styling */
+.card {
+    /* Add shadow effect to cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add transition for hover effects */
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for chart container cards */
+.card:hover {
+    /* Slightly elevate the card when hovering */
+    transform: translateY(-5px);
+    /* Enhance shadow when hovering */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Chart canvas height for proper display */
+canvas {
+    /* Minimum height to ensure charts display properly */
+    min-height: 300px;
+    /* Width filling the container */
+    width: 100% !important;
+}
+
+/* Card header styling */
+.card-header {
+    /* Subtle border at bottom of card headers */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container-fluid {
+        /* Add padding on smaller screens */
+        padding: 0 10px;
+    }
+    
+    canvas {
+        /* Adjust canvas height on smaller screens */
+        min-height: 250px;
+    }
+}
